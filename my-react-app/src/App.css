@@ -1,0 +1,94 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Source Sans Pro', sans-serif; }
+
+/* TOOLBAR */
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: white;
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+}
+
+.buttons button {
+  padding: 0.6rem 1.2rem;
+  margin: 0 0.5rem;
+  border: 2px solid #ccc;
+  background: white;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons button:hover { border-color: #333; }
+.buttons button.active {
+  background: #333;
+  color: white;
+  border-color: #333;
+}
+
+.download {
+  background: #ff5a5f;
+  color: white;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.download:hover { background: #e03e42; }
+
+/* SAYT REJIMLARI */
+.shop {
+  transition: all 0.5s ease;
+}
+
+/* KICHIK */
+.shop.small {
+  font-size: 13px;
+}
+.shop.small .container { max-width: 100%; padding: 0 10px; }
+.shop.small .display-4 { font-size: 2.2rem; }
+.shop.small .hero { padding: 3rem 0 !important; }
+.shop.small .card-img-top { height: 140px; object-fit: cover; }
+.shop.small .row-cols-xl-4 > * { flex: 0 0 100%; max-width: 100%; }
+
+/* O'RTA */
+.shop.medium {
+  font-size: 15px;
+}
+.shop.medium .container { max-width: 960px; }
+.shop.medium .card-img-top { height: 200px; }
+
+/* KATTA */
+.shop.large {
+  font-size: 18px;
+}
+.shop.large .container { max-width: 1400px; }
+.shop.large .display-4 { font-size: 4.5rem; }
+.shop.large .hero { padding: 7rem 0; }
+.shop.large .card-img-top { height: 300px; }
+
+/* HERO */
+.hero {
+  background: #6c757d;
+  padding: 5rem 0;
+}
+
+/* CARD */
+.card {
+  transition: 0.3s;
+}
+.card:hover {
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-5px);
+}
+
+/* STAR */
+.bi-star-fill::before { content: "★"; }
